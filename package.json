@@ -1,6 +1,6 @@
 {
   "name": "@schneefux/lame",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "NodeJS native bindings to libmp3lame & libmpg123.",
   "license": "LGPL-2.1",
   "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
