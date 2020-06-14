@@ -1,7 +1,7 @@
 node-lame
 =========
 ### NodeJS native bindings to libmp3lame & libmpg123
-[![Build Status](https://travis-ci.org/TooTallNate/node-lame.svg?branch=master)](https://travis-ci.org/TooTallNate/node-lame)
+[![Build Status](https://travis-ci.com/schneefux/node-lame.svg?branch=master)](https://travis-ci.com/schneefux/node-lame)
 
 For all your async streaming MP3 encoding/decoding needs, there's `node-lame`!
 This module hooks into libmp3lame, the library that the `lame` command uses, to
@@ -14,10 +14,15 @@ Installation
 `node-lame` comes bundled with its own copy of `libmp3lame` and `libmpg123`, so
 there's no need to have them installed on your system.
 
-Simply compile and install `node-lame` using `npm`:
+This fork of node-lame is published on GitHub packages instead of NPM.
+Create an `.npmrc` in your project's root directory. Add the following line so that packages with the `@schneefux` scope will be installed from the GitHub packages repository: `@schneefux:registry=https://npm.pkg.github.com`
+
+You might need to log in to GitHub via npm once. See [GitHub's documentation](https://help.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages#installing-a-package) for details.
+
+Then, install `node-lame` using `npm`:
 
 ``` bash
-$ npm install lame
+$ npm install @schneefux/lame
 ```
 
 
