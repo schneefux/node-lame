@@ -1,24 +1,20 @@
 {
   "name": "@schneefux/lame",
-  "description": "NodeJS native bindings to libmp3lame & libmpg123.",
-  "keywords": [
-    "lame",
-    "mpg123",
-    "mp3",
-    "mpeg",
-    "mpg",
-    "encode",
-    "decode"
-  ],
   "version": "1.2.5",
-  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
+  "description": "NodeJS native bindings to libmp3lame & libmpg123.",
   "license": "LGPL-2.1",
+  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
   "repository": {
     "type": "git",
-    "url": "git://github.com/TooTallNate/node-lame.git"
+    "url": "git@github.com:schneefux/node-lame.git"
   },
   "main": "./index.js",
   "types": "./index.d.ts",
+  "scripts": {
+    "test": "mocha --reporter spec",
+    "install": "prebuild-install --verbose || node-gyp rebuild",
+    "prebuild": "prebuild --force --strip --verbose"
+  },
   "dependencies": {
     "bindings": "^1.2.1",
     "debug": "^2.2.0",
@@ -32,9 +28,13 @@
     "mocha": "^6.2.2",
     "prebuild": "^10.0.0"
   },
-  "scripts": {
-    "test": "mocha --reporter spec",
-    "install": "prebuild-install --verbose || node-gyp rebuild",
-    "prebuild": "prebuild --force --strip --verbose"
-  }
+  "keywords": [
+    "lame",
+    "mpg123",
+    "mp3",
+    "mpeg",
+    "mpg",
+    "encode",
+    "decode"
+  ]
 }
