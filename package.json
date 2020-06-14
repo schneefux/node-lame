@@ -12,7 +12,7 @@
   ],
   "version": "1.2.5",
   "author": "Nathan Rajlich <nathan@tootallnate.net> (http://tootallnate.net)",
-  "license": "MIT",
+  "license": "LGPL-2.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/TooTallNate/node-lame.git"
